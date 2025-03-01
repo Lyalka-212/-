@@ -1,17 +1,19 @@
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
-    font-family: "https://fonts.googleapis.com";
+    font-family: Inter;
 }
 
 
 
-/* header */
 header{
     padding: 34px 77px 54px 80px;
     display: flex;
     gap: 550px;
+}
+
+.lines {
+    display: none;
 }
 .person{
     display: flex;
@@ -123,12 +125,19 @@ section{
     background: radial-gradient(circle at 0.3% top, #ffdd33, #FF9E5A, #FF6534);
     border-radius: 0px 25px 25px 25px;
     width: 413px;
+    height: 173px;
     border: none;
     color: white;
     padding: 20px 0px 0px 0px;
     font-size: 40px;
     line-height: 40px;
 }
+
+.balls_text{
+    text-align: left;
+    margin-left: 20px;
+}
+
 .balls_img{
     border-radius: 25px;
     padding: 0px 0px 0px 291px;
@@ -141,11 +150,14 @@ section{
 }
 
 
+
 .dostij{
     background: radial-gradient(circle at 0.3% top, #A57AFF, #8205FF);
     border-radius: 0px 25px 25px 25px;
     width: 413px;
     border: none;
+    text-align: left;
+    margin-bottom: 10px;
 }
 .dostij_img{
     border-radius: 25px;
@@ -249,32 +261,210 @@ section{
  .card{
     display: flex;
     justify-content: space-between;
-    width: 413px;
     border: 1px solid #DDE2E4;
     border-radius: 20px;
     padding: 34px 20px;
-    position: fixed;
     background-color: white;
  }
  .one{
     z-index: 1;
-    margin-top: 20px;
     
  }
 .two{
-    margin-top: 91px;
     z-index: 2;
 
  }
  .three{
-    margin-top: 161px;
     z-index: 3;
  }
  .four{
-    margin-top: 232px;
     z-index: 4;
  }
  .five{
-    margin-top: 303px;
     z-index: 6;
  }
+
+
+nav{
+}
+ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+nav ul li{
+    list-style: none;
+}
+nav li a{
+    text-decoration: none;
+    color: #8B8B8B;
+    margin: 5px;
+}
+.lines div{
+    width: 30px;
+    height: 2px;
+    background-color: #8B8B8B;
+    margin-bottom: 5px;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+.lines{
+    display: none;
+}
+
+
+
+ @media (max-width: 431px) and (orientation: portrait) {
+    .main-content{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .button_for_leave{
+        display: none;
+    }
+
+    .join{
+        width: 99vw;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        padding: 0;
+    }
+
+    .join_text{
+        size: 19;
+        font-weight: 600;
+        font-size: 16px;
+        padding-left: 10px;
+    }
+
+    .join_img{
+        padding: 0;
+        height: 100px;
+    }
+
+    .lessons{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .lessons_card{
+        height: 75px;
+        width: 95vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0;
+        padding-left: 20px;
+        margin-top: 5px;
+    }
+
+    .lessons_card-two{
+        height: 75px;
+        width: 95vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0;
+        padding-left: 20px;
+        margin-top: 5px;
+        
+    }
+
+    .lessons_card_img{
+        padding: 0;
+    }
+
+    .lessons_card_img-2{
+        padding: 0;
+    }
+
+    .lessons_card_img-3{
+        padding: 0;
+    }
+
+    .lessons_card_text{
+        padding: 0;
+    }
+    
+    .balls{
+        width: 95vw;
+        height: 153px;
+        padding: 0;
+    }
+
+    .balls_text_ickl{
+        width: 130px;
+    }
+
+    .balls_img{
+        display: none;
+    }
+
+    .mesto_v_gruppe{
+        display: flex;
+        flex-direction: row;
+        padding-top: 20px;
+        position: relative;
+        z-index: 50;
+    }
+
+    .dostij{
+        width: 95vw;
+        height: 100px;
+        padding-top: 0px;
+    }
+
+    .dostij_text{
+        font-weight: 600;
+        font-size: 18px;
+        padding-top: 10px;
+    }
+
+    .dostij_img_ball{
+        width: 180px;
+        height: 45px;
+    }
+
+    .dostij_img{
+        display: none;
+    }
+    
+    .avatar{
+        height: 34px;
+        width: 34px;
+    }
+
+    header{
+        padding-left: 10px;
+        padding-bottom: 5px;
+    }
+
+    .lines{
+        position: fixed;
+        left: 90%;
+        display: block;
+        padding-top: 10px;
+        
+    }
+    ul{
+        display: none;
+    }
+    .show-menu{
+        display: block;
+        margin-left: 200px;
+    }
+ }
+
+.show-menu{
+    display: flex;
+    flex-direction: column;
+}
